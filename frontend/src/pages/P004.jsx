@@ -1,4 +1,18 @@
-import bgImg from "../assets/1_1.png";
+import bgImg from "../assets/4-1.jpg";
+import bgImg1 from "../assets/4-2.jpg";
+import bgImg2 from "../assets/4-3.jpg";
+import bgImg3 from "../assets/4-4.jpg";
+import bgImg4 from "../assets/4-5.jpg";
+import bgImg5 from "../assets/4-6.jpg";
+import bgImg6 from "../assets/4-7.jpg";
+import bgImg7 from "../assets/4-8.png";
+import aws from "../assets/aws.png";
+import opentext from "../assets/opentext.png";
+import sap from "../assets/sap.png";
+import databricks from "../assets/databrick.png";
+import cloudera from "../assets/cloudera.png";
+import dynatrace from "../assets/dynatrace.png";
+
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 import { FaArrowRight, FaArrowLeft , FaChevronRight } from "react-icons/fa";
@@ -16,7 +30,18 @@ const ApplicationIntegration = () => {
       {/* Content */}
       <div className="relative z-10 max-w-3xl px-6 md:px-12">
         <h1 className="text-white text-4xl md:text-5xl font-semibold leading-tight">
-          <span className="block text-white/90 font-normal">Application</span>
+          <span className="block text-white/90 font-normal"
+          style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "56px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+          >Application</span>
           <span className="block font-bold">Integration</span>
         </h1>
         <p className="mt-6 text-white/80 text-base md:text-lg leading-relaxed">
@@ -47,15 +72,32 @@ const IntegrationSection = () => {
           potential of your business operations.
         </p>
 
-        <button className="flex items-center gap-2 mt-4 text-sm md:text-base font-medium border border-red-500 px-5 py-2 rounded-full hover:bg-red-500 hover:text-white transition-colors duration-300">
-          Get Started <FaArrowRight className="text-sm" />
+        <button className="flex items-center gap-2 mt-4 text-sm md:text-base font-medium px-5 py-2 rounded-full transition-colors duration-300">
+          Get Started
+          <span
+    className="relative flex items-center justify-center w-10 h-10 right-1"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
         </button>
       </div>
 
       {/* Image Section */}
       <div className="md:w-1/2">
         <img
-          src={bgImg}
+          src={bgImg1}
           alt="Integration Illustration"
           className="rounded-lg shadow-lg w-full object-cover"
         />
@@ -98,9 +140,23 @@ const JoinUs = () => {
         <div className="pt-4">
           <button className="flex items-center gap-2 text-white hover:text-red-400 transition">
             <span>Connect HPIT</span>
-            <span className="w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500">
-              →
-            </span>
+             <span
+    className="relative flex items-center justify-center w-10 h-10 right-3"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
           </button>
         </div>
       </div>
@@ -108,7 +164,7 @@ const JoinUs = () => {
       {/* Right Image */}
       <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
         <img
-          src={bgImg}
+          src={bgImg8}
           alt="Team working"
           className="rounded-md shadow-lg w-full max-w-md md:max-w-lg object-cover"
         />
@@ -182,14 +238,38 @@ const IntegrationExpertise = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="flex justify-center gap-4 mt-12">
-        <button className="w-10 h-10 flex items-center justify-center rounded-full border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition-all">
-          <FaArrowLeft size={14} />
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-full border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition-all">
-          <FaArrowRight size={14} />
-        </button>
-      </div>
+       <div className="flex justify-end space-x-4 mt-10">
+          <button
+    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  {/* Right Arrow */}
+  <button
+    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+        </div>
     </section>
   );
 };
@@ -200,7 +280,7 @@ const SyncAutomationSection = () => {
   return (
     <section className="bg-black text-white py-20 px-6 md:px-16">
       {/* Header */}
-      <div className="text-center mb-12">
+      <div className="text-left mb-12">
         <h2 className="text-4xl md:text-5xl font-bold leading-snug">
           Disconnected systems create friction.
           <br />
@@ -236,9 +316,10 @@ const SyncAutomationSection = () => {
         {/* Center Image */}
         <div className="flex justify-center">
           <img
-            src={bgImg}
+            src={bgImg2}
             alt="Automation Visualization"
-            className="rounded-lg shadow-2xl w-full max-w-xs md:max-w-sm object-cover"
+            className="rounded-lg shadow-2xl w-full h-full max-w-xs md:max-w-sm object-cover"
+            style={{ height: "325px" }}
           />
         </div>
 
@@ -283,7 +364,7 @@ const IntegrationUseCases = () => {
       </div>
 
       {/* Heading */}
-      <div className="text-center mb-12">
+      <div className="text-left mb-12">
         <h2 className="text-4xl md:text-5xl font-bold leading-snug">
           Real-World <span className="text-[#6366F1]">Integration</span>
           <br />
@@ -296,70 +377,71 @@ const IntegrationUseCases = () => {
       </div>
 
       {/* Use Case Grid */}
-      <div className="bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-10 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-          {/* 1 */}
-          <div className="border-r border-b border-gray-700 pr-6 pb-6">
-            <h3 className="font-semibold text-lg mb-2">
-              Discovery & CRM & ERP Synchronization
-            </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Unify customer and resource data across platforms.
-            </p>
-          </div>
+      <div className="bg-transparent border border-gray-700 rounded-xl p-10 max-w-6xl mx-auto backdrop-blur-sm">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+    {/* 1 */}
+    <div className="border-r border-b border-gray-700 pr-6 pb-6">
+      <h3 className="font-semibold text-lg mb-2">
+        Discovery & CRM & ERP Synchronization
+      </h3>
+      <p className="text-gray-400 text-sm leading-relaxed">
+        Unify customer and resource data across platforms.
+      </p>
+    </div>
 
-          {/* 2 */}
-          <div className="border-r border-b border-gray-700 pr-6 pb-6">
-            <h3 className="font-semibold text-lg mb-2">
-              Payment Gateway Integration
-            </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Secure and seamless transactions across apps and platforms.
-            </p>
-          </div>
+    {/* 2 */}
+    <div className="border-r border-b border-gray-700 pr-6 pb-6">
+      <h3 className="font-semibold text-lg mb-2">
+        Payment Gateway Integration
+      </h3>
+      <p className="text-gray-400 text-sm leading-relaxed">
+        Secure and seamless transactions across apps and platforms.
+      </p>
+    </div>
 
-          {/* 3 */}
-          <div className="border-b border-gray-700 pr-6 pb-6">
-            <h3 className="font-semibold text-lg mb-2">
-              Cross-Platform User Authentication
-            </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Enable smooth logins and identity management across multiple
-              applications.
-            </p>
-          </div>
+    {/* 3 */}
+    <div className="border-b border-gray-700 pr-6 pb-6">
+      <h3 className="font-semibold text-lg mb-2">
+        Cross-Platform User Authentication
+      </h3>
+      <p className="text-gray-400 text-sm leading-relaxed">
+        Enable smooth logins and identity management across multiple
+        applications.
+      </p>
+    </div>
 
-          {/* 4 */}
-          <div className="border-r pr-6 pt-6">
-            <h3 className="font-semibold text-lg mb-2">
-              Legacy + SaaS System Linking
-            </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Bridge old systems with new-age cloud apps without disruption.
-            </p>
-          </div>
+    {/* 4 */}
+    <div className="border-r pr-6 pt-6">
+      <h3 className="font-semibold text-lg mb-2">
+        Legacy + SaaS System Linking
+      </h3>
+      <p className="text-gray-400 text-sm leading-relaxed">
+        Bridge old systems with new-age cloud apps without disruption.
+      </p>
+    </div>
 
-          {/* 5 */}
-          <div className="border-r pr-6 pt-6">
-            <h3 className="font-semibold text-lg mb-2">
-              Centralized Analytics Dashboards
-            </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Bring data from various sources into one powerful dashboard view.
-            </p>
-          </div>
+    {/* 5 */}
+    <div className="border-r pr-6 pt-6">
+      <h3 className="font-semibold text-lg mb-2">
+        Centralized Analytics Dashboards
+      </h3>
+      <p className="text-gray-400 text-sm leading-relaxed">
+        Bring data from various sources into one powerful dashboard view.
+      </p>
+    </div>
 
-          {/* 6 */}
-          <div className="pt-6">
-            <h3 className="font-semibold text-lg mb-2">
-              IoT & Device Data Merging
-            </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Integrate real-time data from devices, sensors, and smart tech.
-            </p>
-          </div>
-        </div>
-      </div>
+    {/* 6 */}
+    <div className="pt-6">
+      <h3 className="font-semibold text-lg mb-2">
+        IoT & Device Data Merging
+      </h3>
+      <p className="text-gray-400 text-sm leading-relaxed">
+        Integrate real-time data from devices, sensors, and smart tech.
+      </p>
+    </div>
+  </div>
+</div>
+
     </section>
   );
 };
@@ -367,194 +449,200 @@ const IntegrationUseCases = () => {
 const HpitIntegrationSection = () => {
   return (
     <section className="bg-black text-white py-20 px-6 md:px-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left Content */}
-        <div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-snug">
-            Integration Done Right:
-            <br /> <span className="text-[#6366F1]">The HPIT Way</span>
-          </h2>
-          <p className="text-gray-400 mb-10 text-base md:text-lg">
-            Secure, seamless, and scalable — our process ensures nothing breaks
-            as everything connects.
-          </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+  {/* Left Column (Steps 1–3) */}
+  <div>
+    <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-snug">
+      Integration Done Right:
+      <br /> <span className="text-[#6366F1]">The HPIT Way</span>
+    </h2>
+    <p className="text-gray-400 mb-10 text-base md:text-lg">
+      Secure, seamless, and scalable — our process ensures nothing breaks
+      as everything connects.
+    </p>
 
-          <div className="space-y-8">
-            {/* Step 1 */}
-            <div className="flex items-start relative">
-              <div className="flex flex-col items-center mr-5">
-                <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
-                  1
-                </div>
-                <div className="h-16 w-px bg-gray-700"></div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-1">
-                  Requirement Analysis
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Understand your systems, gaps, and business goals.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="flex items-start relative">
-              <div className="flex flex-col items-center mr-5">
-                <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
-                  2
-                </div>
-                <div className="h-16 w-px bg-gray-700"></div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-1">
-                  Integration Blueprint
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Design secure APIs, connectors, and flow architecture.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="flex items-start relative">
-              <div className="flex flex-col items-center mr-5">
-                <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
-                  3
-                </div>
-                <div className="h-16 w-px bg-gray-700"></div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-1">
-                  Development & Testing
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Build, test, and validate every integration point.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div className="flex items-start relative">
-              <div className="flex flex-col items-center mr-5">
-                <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
-                  4
-                </div>
-                <div className="h-16 w-px bg-gray-700"></div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-1">
-                  Deployment & Monitoring
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Deploy with alerts, logs, and performance dashboards.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 5 */}
-            <div className="flex items-start relative">
-              <div className="flex flex-col items-center mr-5">
-                <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
-                  5
-                </div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-1">Ongoing Support</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  We stay with you to troubleshoot, scale, or update.
-                </p>
-              </div>
-            </div>
+    <div className="space-y-8">
+      {/* Step 1 */}
+      <div className="flex items-start relative">
+        <div className="flex flex-col items-center mr-5">
+          <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
+            1
           </div>
+          <div className="h-16 w-px bg-gray-700"></div>
         </div>
-
-        {/* Right Image */}
-        <div className="flex justify-center md:justify-end">
-          <img
-            src={bgImg}
-            alt="Integration process visual"
-            className="rounded-lg shadow-2xl w-full max-w-md md:max-w-lg object-cover"
-          />
+        <div>
+          <h3 className="font-semibold text-lg mb-1">
+            Requirement Analysis
+          </h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Understand your systems, gaps, and business goals.
+          </p>
         </div>
       </div>
+
+      {/* Step 2 */}
+      <div className="flex items-start relative">
+        <div className="flex flex-col items-center mr-5">
+          <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
+            2
+          </div>
+          <div className="h-16 w-px bg-gray-700"></div>
+        </div>
+        <div>
+          <h3 className="font-semibold text-lg mb-1">
+            Integration Blueprint
+          </h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Design secure APIs, connectors, and flow architecture.
+          </p>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="flex items-start relative">
+        <div className="flex flex-col items-center mr-5">
+          <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
+            3
+          </div>
+        </div>
+        <div>
+          <h3 className="font-semibold text-lg mb-1">
+            Development & Testing
+          </h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Build, test, and validate every integration point.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Right Column */}
+  <div className="flex flex-col items-center md:items-end space-y-10">
+    {/* Top Image */}
+    <img
+      src={bgImg3}
+      alt="Integration process visual"
+      className="rounded-lg shadow-2xl w-full max-w-md md:max-w-lg object-cover"
+    />
+
+    {/* Steps 4 & 5 */}
+    <div className="w-full max-w-md md:max-w-lg space-y-8">
+      {/* Step 4 */}
+      <div className="flex items-start relative">
+        <div className="flex flex-col items-center mr-5">
+          <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
+            4
+          </div>
+          <div className="h-16 w-px bg-gray-700"></div>
+        </div>
+        <div>
+          <h3 className="font-semibold text-lg mb-1">
+            Deployment & Monitoring
+          </h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Deploy with alerts, logs, and performance dashboards.
+          </p>
+        </div>
+      </div>
+
+      {/* Step 5 */}
+      <div className="flex items-start relative">
+        <div className="flex flex-col items-center mr-5">
+          <div className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 font-semibold">
+            5
+          </div>
+        </div>
+        <div>
+          <h3 className="font-semibold text-lg mb-1">Ongoing Support</h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            We stay with you to troubleshoot, scale, or update.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
   );
 };
 
 
-const ToolsSection = () => {
-  const tools = [
-    {
-      name: "Databricks",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Databricks_Logo.png",
-    },
-    {
-      name: "Cloudera",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Cloudera_logo.svg",
-    },
-    {
-      name: "SAP",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg",
-    },
-    {
-      name: "Opentext",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/b/b4/OpenText_logo.svg",
-    },
-    {
-      name: "Dynatrace",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/7/72/Dynatrace_logo.svg",
-    },
-    {
-      name: "AWS",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-    },
-  ];
+const tools = [
+  { name: "Databricks", logo: `${databricks}` },
+  { name: "Cloudera", logo: `${cloudera}` },
+  { name: "SAP", logo: `${sap}` },
+  { name: "Opentext", logo: `${opentext}` },
+  { name: "Dynatrace", logo: `${dynatrace}` },
+  { name: "Aws", logo: `${aws}` },
+];
 
+ function ToolsSection() {
   return (
-    <section
-      className="relative py-20 px-6 bg-cover bg-center text-white"
-      style={{ backgroundImage: `url(${bgImg})` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-85"></div>
-
-      <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-        {/* Left Content */}
-        <div className="flex-1 text-center lg:text-left">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-            Built With the{" "}
-            <span className="text-indigo-400">Right Tools</span> for the Job
+    <section className="bg-black text-white py-24 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* Left Text Section */}
+        <div>
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+            Built <span className="text-indigo-400">With the Right</span> <br />
+            <span className="text-indigo-400">Tools for</span> the Job
           </h2>
-          <p className="text-gray-300 text-lg mb-8">
-            We use cutting-edge frameworks and platforms to ensure top
-            performance.
+
+          <p className="text-gray-400 mb-8 text-lg">
+            We use cutting-edge frameworks and platforms to ensure top performance.
           </p>
 
-          <button className="flex items-center justify-center gap-2 bg-transparent border border-indigo-400 hover:bg-indigo-500 hover:border-indigo-500 text-white py-2 px-6 rounded-full text-sm font-medium transition-all duration-300">
-            Get Started <span className="text-lg">→</span>
-          </button>
+          <button
+  className="flex items-center gap-3 text-white text-lg font-medium relative group"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    backgroundColor: "transparent",
+  }}
+>
+  <span>Get Started</span>
+  <span
+    className="relative flex items-center justify-center w-10 h-10 right-5"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
+</button>
         </div>
 
-        {/* Right Grid */}
-        <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-6 justify-items-center">
-          {tools.map((tool, i) => (
+        {/* Right Tools Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          {tools.map((tool, index) => (
             <div
-              key={i}
-              className="w-40 h-40 bg-gray-900/60 border border-gray-700 rounded-xl flex flex-col items-center justify-center hover:bg-gray-800/70 transition-all duration-300"
+              key={index}
+              className="bg-[#1e1e1e] hover:bg-[#2a2a2a] transition rounded-lg p-6 flex flex-col items-center justify-center text-center"
             >
-              <img
-                src={tool.logo}
-                alt={tool.name}
-                className="h-10 object-contain mb-3"
-              />
-              <p className="text-gray-200 text-sm font-medium">{tool.name}</p>
+              {/* Placeholder for logo — replace with actual <img> */}
+              <div className="w-14 h-14 mb-3 flex items-center justify-center">
+                <img
+                  src={tool.logo}
+                  alt={tool.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              <p className="font-medium text-gray-200">{tool.name}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
 
 const RelatedInsights = () => {
@@ -562,17 +650,17 @@ const RelatedInsights = () => {
     {
       title: 'CLOUD ADOPTION',
       description: 'Discover how businesses move to the cloud with minimal disruption.',
-      image: bgImg,
+      image: bgImg4,
     },
     {
       title: 'LEGACY MODERNIZATION',
       description: 'Transform outdated systems into agile, future-ready applications.',
-      image: bgImg,
+      image: bgImg5,
     },
     {
       title: 'COST EFFICIENCY',
       description: 'Learn strategies to reduce migration costs while boosting performance.',
-      image: bgImg,
+      image: bgImg6,
     },
   ];
 
@@ -603,9 +691,23 @@ const RelatedInsights = () => {
                 <p className="text-gray-400 mb-6">{card.description}</p>
                 <button className="flex items-center text-white font-semibold hover:text-red-500 transition">
                   Learn more
-                  <span className="ml-2 w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500 text-sm">
-                    →
-                  </span>
+                  <span
+    className="relative flex items-center justify-center w-10 h-10 right-1"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
                 </button>
               </div>
             </div>
@@ -653,9 +755,9 @@ const Resources = () => {
             Resources
           </h2>
           <img
-            src={bgImg}
+            src={bgImg7}
             alt="Resource graphic"
-            className="w-80 h-80 object-contain"
+            className="w-120 h-120 object-contain"
           />
         </div>
 
@@ -673,9 +775,23 @@ const Resources = () => {
               <p className="text-gray-400 mb-6">{card.description}</p>
               <button className="flex items-center text-white font-semibold hover:text-red-500 transition">
                 Learn more
-                <span className="ml-2 w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500 text-sm">
-                  →
-                </span>
+                <span
+    className="relative flex items-center justify-center w-10 h-10 right-1"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
               </button>
             </div>
           ))}

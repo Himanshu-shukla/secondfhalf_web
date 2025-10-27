@@ -6,7 +6,7 @@ import bgImg4 from "../assets/2-5.png";
 import bgImg5 from "../assets/2-6.png";
 import bgImg6 from "../assets/2-7.png";
 import bgImg7 from "../assets/2-8.png";
-import bgImg8 from "../assets/2-9.png";
+import bgImg8 from "../assets/1-10.png";
 import bgImg9 from "../assets/2-10.jpg";
 import bgImg10 from "../assets/2-11.jpg";
 import bgImg11 from "../assets/2-12.jpg";

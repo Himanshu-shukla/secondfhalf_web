@@ -1,4 +1,20 @@
-import bgImg from "../assets/1_1.png";
+import bgImg from "../assets/3-1.jpg";
+import bgImg1 from "../assets/3-2.jpg";
+import bgImg2 from "../assets/3-3.jpg";
+import bgImg3 from "../assets/3-4.png";
+import bgImg4 from "../assets/3-5.png";
+import bgImg14 from "../assets/3-15.png";
+import bgImg5 from "../assets/3-6.jpg";
+import bgImg6 from "../assets/3-7.jpg";
+import bgImg7 from "../assets/3-8.jpg";
+import bgImg8 from "../assets/3-9.png";
+import bgImg9 from "../assets/1-10.png";
+import aws from "../assets/aws.png";
+import opentext from "../assets/opentext.png";
+import sap from "../assets/sap.png";
+import databricks from "../assets/databrick.png";
+import cloudera from "../assets/cloudera.png";
+import dynatrace from "../assets/dynatrace.png";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -9,19 +25,19 @@ const RelatedInsights = () => {
       title: "DIGITAL INNOVATION",
       description:
         "Explore how modern technologies reshape applications for smarter business outcomes.",
-      image: bgImg, // Replace with your imported bgImg or other image paths
+      image: bgImg5, // Replace with your imported bgImg or other image paths
     },
     {
       title: "LEGACY TO MODERN",
       description:
         "Understand strategies to upgrade old systems into agile, scalable solutions.",
-      image: bgImg,
+      image: bgImg6,
     },
     {
       title: "FUTURE-READY APPS",
       description:
         "Learn how transformation builds resilient applications that grow with your business.",
-      image: bgImg,
+      image: bgImg7,
     },
   ];
 
@@ -59,9 +75,23 @@ const RelatedInsights = () => {
 
               <button className="mt-5 flex items-center text-white hover:text-gray-300 transition">
                 <span className="text-sm font-medium">Learn more</span>
-                <span className="ml-2 w-8 h-8 flex items-center justify-center border border-red-500 rounded-full hover:bg-red-500 hover:text-white transition">
-                  <FaArrowRight className="text-xs" />
-                </span>
+                 <span
+    className="relative flex items-center justify-center w-10 h-10 right-15"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
               </button>
             </div>
           </div>
@@ -94,9 +124,20 @@ const ApplicationTransformation = () => {
       {/* Content */}
       <div className="relative z-10 max-w-3xl px-8 md:px-16">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          <span className="block font-outline text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
-            Application
-          </span>
+          <h1
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "56px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+>
+  Application
+</h1>
           <span className="block text-white font-extrabold">
             Transformation
           </span>
@@ -145,9 +186,23 @@ const JoinUs = () => {
         <div className="pt-4">
           <button className="flex items-center gap-2 text-white hover:text-red-400 transition">
             <span>Connect HPIT</span>
-            <span className="w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500">
-              →
-            </span>
+             <span
+    className="relative flex items-center justify-center w-10 h-10 right-3"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
           </button>
         </div>
       </div>
@@ -155,7 +210,7 @@ const JoinUs = () => {
       {/* Right Image */}
       <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
         <img
-          src={bgImg}
+          src={bgImg9}
           alt="Team working"
           className="rounded-md shadow-lg w-full max-w-md md:max-w-lg object-cover"
         />
@@ -192,9 +247,23 @@ const FullUpgradeSection = () => {
 
           <button className="mt-8 inline-flex items-center text-white font-semibold hover:text-blue-400 transition">
             Get Started
-            <span className="ml-3 w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition">
-              →
-            </span>
+            <span
+    className="relative flex items-center justify-center w-10 h-10 right-2"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
           </button>
         </div>
 
@@ -202,7 +271,7 @@ const FullUpgradeSection = () => {
         <div className="flex justify-center">
           <div className="relative">
             <img
-              src={bgImg}
+              src={bgImg1}
               alt="Transformation"
               className="rounded-md shadow-lg border border-gray-700"
             />
@@ -214,25 +283,69 @@ const FullUpgradeSection = () => {
       {/* Bottom Stats Section */}
       <div className="mt-16 border-t border-gray-800 pt-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
-          <h3 className="text-4xl font-bold">60%</h3>
+          <h3 className="text-4xl font-bold"
+          style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+          >60%</h3>
           <p className="text-gray-400 text-sm mt-2">
             Reduction in System Downtime
           </p>
         </div>
         <div className="border-l border-gray-800 pl-4">
-          <h3 className="text-4xl font-bold">3x</h3>
+          <h3 className="text-4xl font-bold"
+          style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+          >3x</h3>
           <p className="text-gray-400 text-sm mt-2">
             Faster Feature Deployment <br /> Post-Transformation
           </p>
         </div>
         <div className="border-l border-gray-800 pl-4">
-          <h3 className="text-4xl font-bold">40%</h3>
+          <h3 className="text-4xl font-bold"
+          style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+          >40%</h3>
           <p className="text-gray-400 text-sm mt-2">
             Lower Maintenance & Support Costs
           </p>
         </div>
         <div className="border-l border-gray-800 pl-4">
-          <h3 className="text-4xl font-bold">2.5x</h3>
+          <h3 className="text-4xl font-bold"
+          style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+          >2.5x</h3>
           <p className="text-gray-400 text-sm mt-2">
             Increase in User Satisfaction
           </p>
@@ -259,7 +372,7 @@ const TransformSection = () => {
 
       <div className="relative max-w-6xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-12">
+        <div className="text-left mb-12">
           <h2 className="text-4xl md:text-5xl font-bold">
             What We <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Transform</span>
           </h2>
@@ -302,12 +415,19 @@ const TransformSection = () => {
 const HPITApproach = () => {
   return (
     <section className="bg-black text-white py-16 px-6 md:px-20 lg:px-32">
+      <h2 className="text-3xl md:text-4xl font-bold mb-2 margin-auto text-center">
+            The <span className="text-white">HPIT</span>{" "}
+            <span className="">Approach</span>
+          </h2>
+           <p className="text-gray-300 mb-8 text-center">
+            A clear, strategic path to modern, high performing applications.
+          </p>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left Image */}
         <div className="flex justify-center">
           <img
-            src={bgImg}
+            src={bgImg2}
             alt="Smiling person at laptop"
             className="rounded-lg w-full max-w-md object-cover shadow-lg"
           />
@@ -315,13 +435,8 @@ const HPITApproach = () => {
 
         {/* Right Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            The <span className="text-white">HPIT</span>{" "}
-            <span className="text-red-500">Approach</span>
-          </h2>
-          <p className="text-gray-300 mb-8">
-            A clear, strategic path to modern, high performing applications.
-          </p>
+          
+         
 
           <h3 className="text-lg font-semibold mb-6">
             Our Proven 5-Step Process to Modernize Legacy Applications
@@ -410,15 +525,18 @@ const ShowcaseSection = () => {
       }}
     >
       {/* Header Section */}
-      <div className="max-w-5xl mx-auto text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-extrabold">
-          Outdated to <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Outstanding</span>
-        </h2>
-        <p className="text-gray-300 mt-4 text-lg">
-          We helped modernize their data-sharing platform, improving scalability, tightening security, and reducing cloud costs by 35%
-        </p>
-      </div>
-
+     <div className="max-w-5xl text-left mb-16">
+  <h2 className="text-4xl md:text-5xl font-extrabold">
+    Outdated to{" "}
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+      Outstanding
+    </span>
+  </h2>
+  <p className="text-gray-300 mt-4 text-lg max-w-2xl">
+    We helped modernize their data-sharing platform, improving scalability,
+    tightening security, and reducing cloud costs by 35%.
+  </p>
+</div>
       {/* Grid Section */}
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         
@@ -427,47 +545,109 @@ const ShowcaseSection = () => {
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             How We <span className="text-indigo-400">Transformed</span> X's Legacy App
           </h3>
-          <p className="text-gray-400">—</p>
         </div>
 
         {/* Card 2 */}
-        <div className="bg-gradient-to-b from-gray-900 to-black p-8 rounded-xl border border-gray-800 flex flex-col justify-between">
-          <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Thursday</h3>
-            <p className="text-gray-400 mb-6">
-              We enhanced this dating app’s UX and backend to support real-time events and location-based user matching.
-            </p>
-          </div>
-          <button className="text-indigo-400 font-semibold mt-auto flex items-center gap-2 hover:gap-3 transition-all">
-            KNOW MORE <span className="text-red-500 text-lg">→</span>
-          </button>
+        <div className="relative bg-gradient-to-b from-gray-900 to-black p-8 rounded-xl border border-gray-800 flex flex-col justify-between overflow-hidden">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">Thursday</h3>
+          <p className="text-gray-400 mb-6">
+            We enhanced this dating app’s UX and backend to support real-time events and location-based user matching.
+          </p>
         </div>
 
-        {/* Card 3 */}
-        <div className="bg-gradient-to-b from-gray-900 to-black p-8 rounded-xl border border-gray-800 flex flex-col justify-between">
-          <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Gener8</h3>
-            <p className="text-gray-400 mb-6">
-              Built a secure system enabling users to control their data and earn rewards by sharing it with brands.
-            </p>
-          </div>
-          <button className="text-indigo-400 font-semibold mt-auto flex items-center gap-2 hover:gap-3 transition-all">
-            KNOW MORE <span className="text-red-500 text-lg">→</span>
-          </button>
+        <button className="text-indigo-400 font-semibold mt-auto flex items-center gap-2 hover:gap-3 transition-all relative z-10">
+          KNOW MORE
+          <span className="relative flex items-center justify-center w-10 h-10 right-5">
+            <span className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 transition-transform duration-500 ease-in-out"></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="white"
+              className="w-5 h-5"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+            </svg>
+          </span>
+        </button>
+
+        {/* Bottom-right image */}
+        <img
+          src={bgImg3}
+          alt="Thursday Project"
+          className="absolute bottom-0 right-0 w-40 opacity-90 pointer-events-none"
+        />
+      </div>
+
+      {/* Card 2 */}
+      <div className="relative bg-gradient-to-b from-gray-900 to-black p-8 rounded-xl border border-gray-800 flex flex-col justify-between overflow-hidden">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">Gener8</h3>
+          <p className="text-gray-400 mb-6">
+            Built a secure system enabling users to control their data and earn rewards by sharing it with brands.
+          </p>
         </div>
 
-        {/* Card 4 */}
-        <div className="bg-gradient-to-b from-gray-900 to-black p-8 rounded-xl border border-gray-800 flex flex-col justify-between">
-          <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Mindful Chef</h3>
-            <p className="text-gray-400 mb-6">
-              A healthy meal delivery platform we optimized for performance, user experience, and seamless subscription management.
-            </p>
-          </div>
-          <button className="text-indigo-400 font-semibold mt-auto flex items-center gap-2 hover:gap-3 transition-all">
-            KNOW MORE <span className="text-red-500 text-lg">→</span>
-          </button>
+        <button className="text-indigo-400 font-semibold mt-auto flex items-center gap-2 hover:gap-3 transition-all relative z-10">
+          KNOW MORE
+          <span className="relative flex items-center justify-center w-10 h-10 right-5">
+            <span className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 transition-transform duration-500 ease-in-out"></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="white"
+              className="w-5 h-5"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+            </svg>
+          </span>
+        </button>
+
+        {/* Bottom-right image */}
+        <img
+          src={bgImg4}
+          alt="Gener8 Project"
+          className="absolute bottom-0 right-0 w-40 opacity-90  pointer-events-none"
+        />
+      </div>
+
+      {/* Card 3 */}
+      <div className="relative bg-gradient-to-b from-gray-900 to-black p-8 rounded-xl border border-gray-800 flex flex-col justify-between overflow-hidden">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">Mindful Chef</h3>
+          <p className="text-gray-400 mb-6">
+            A healthy meal delivery platform we optimized for performance, user experience, and seamless subscription management.
+          </p>
         </div>
+
+        <button className="text-indigo-400 font-semibold mt-auto flex items-center gap-2 hover:gap-3 transition-all relative z-10">
+          KNOW MORE
+          <span className="relative flex items-center justify-center w-10 h-10 right-5">
+            <span className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 transition-transform duration-500 ease-in-out"></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="white"
+              className="w-5 h-5"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+            </svg>
+          </span>
+        </button>
+
+        {/* Bottom-right image */}
+        <img
+          src={bgImg14}
+          alt="Mindful Chef Project"
+          className="absolute bottom-0 right-0 w-40 opacity-90  pointer-events-none"
+        />
+      </div>
 
       </div>
     </section>
@@ -475,108 +655,92 @@ const ShowcaseSection = () => {
 };
 
 
-const ToolsSection = () => {
+const tools = [
+  { name: "Databricks", logo: `${databricks}` },
+  { name: "Cloudera", logo: `${cloudera}` },
+  { name: "SAP", logo: `${sap}` },
+  { name: "Opentext", logo: `${opentext}` },
+  { name: "Dynatrace", logo: `${dynatrace}` },
+  { name: "Aws", logo: `${aws}` },
+];
+
+ function ToolsSection() {
   return (
-    <div
-      className="relative w-full bg-black text-white py-20 px-6 md:px-16 flex flex-col lg:flex-row items-center justify-between"
-      style={{
-        backgroundImage: `url(${bgImg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+    <section className="bg-black text-white py-24 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* Left Text Section */}
+        <div>
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+            Built <span className="text-indigo-400">With the Right</span> <br />
+            <span className="text-indigo-400">Tools for</span> the Job
+          </h2>
+
+          <p className="text-gray-400 mb-8 text-lg">
+            We use cutting-edge frameworks and platforms to ensure top performance.
+          </p>
+
+          <button
+  className="flex items-center gap-3 text-white text-lg font-medium relative group"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    backgroundColor: "transparent",
+  }}
+>
+  <span>Get Started</span>
+  <span
+    className="relative flex items-center justify-center w-10 h-10 right-5"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
     >
-      {/* Left Text Section */}
-      <div className="max-w-lg text-center lg:text-left mb-12 lg:mb-0">
-        <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-          Built <span className="text-[#A29BFE]">With the Right</span>
-          <br />
-          Tools <span className="text-[#A29BFE]">for the Job</span>
-        </h2>
-        <p className="text-gray-300 mb-8">
-          We use cutting-edge frameworks and platforms to ensure top
-          performance.
-        </p>
-        <button className="flex items-center gap-2 text-white border-b-2 border-red-500 hover:text-red-500 transition-colors">
-          Get Started <FaArrowRight className="text-sm" />
-        </button>
-      </div>
-
-      {/* Right Grid Section */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-        {/* Databricks */}
-        <div className="bg-[#111111] hover:bg-[#1a1a1a] transition p-6 rounded-lg flex flex-col items-center">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Databricks_Logo.png"
-            alt="Databricks"
-            className="h-8 mb-3 object-contain"
-          />
-          <p className="text-gray-300 text-sm">Databricks</p>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
+</button>
         </div>
 
-        {/* Cloudera */}
-        <div className="bg-[#111111] hover:bg-[#1a1a1a] transition p-6 rounded-lg flex flex-col items-center">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Cloudera_logo.svg"
-            alt="Cloudera"
-            className="h-6 mb-3 object-contain"
-          />
-          <p className="text-gray-300 text-sm">Cloudera</p>
-        </div>
-
-        {/* SAP */}
-        <div className="bg-[#111111] hover:bg-[#1a1a1a] transition p-6 rounded-lg flex flex-col items-center">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
-            alt="SAP"
-            className="h-8 mb-3 object-contain"
-          />
-          <p className="text-gray-300 text-sm">SAP</p>
-        </div>
-
-        {/* Opentext */}
-        <div className="bg-[#111111] hover:bg-[#1a1a1a] transition p-6 rounded-lg flex flex-col items-center">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/8/81/OpenText_logo.svg"
-            alt="Opentext"
-            className="h-8 mb-3 object-contain"
-          />
-          <p className="text-gray-300 text-sm">Opentext</p>
-        </div>
-
-        {/* Dynatrace */}
-        <div className="bg-[#111111] hover:bg-[#1a1a1a] transition p-6 rounded-lg flex flex-col items-center">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Dynatrace_logo.svg"
-            alt="Dynatrace"
-            className="h-8 mb-3 object-contain"
-          />
-          <p className="text-gray-300 text-sm">Dynatrace</p>
-        </div>
-
-        {/* AWS */}
-        <div className="bg-[#111111] hover:bg-[#1a1a1a] transition p-6 rounded-lg flex flex-col items-center">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-            alt="AWS"
-            className="h-8 mb-3 object-contain"
-          />
-          <p className="text-gray-300 text-sm">AWS</p>
+        {/* Right Tools Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          {tools.map((tool, index) => (
+            <div
+              key={index}
+              className="bg-[#1e1e1e] hover:bg-[#2a2a2a] transition rounded-lg p-6 flex flex-col items-center justify-center text-center"
+            >
+              {/* Placeholder for logo — replace with actual <img> */}
+              <div className="w-14 h-14 mb-3 flex items-center justify-center">
+                <img
+                  src={tool.logo}
+                  alt={tool.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              <p className="font-medium text-gray-200">{tool.name}</p>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
-};
+}
 
 function ResourcesSection() {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-center min-h-screen bg-black text-white px-8 py-16">
+    <section className="relative flex flex-col md:flex-row items-center justify-center bg-black text-white px-8">
       {/* Left Side - Image and Heading */}
       <div className="flex flex-col items-center md:items-start w-full md:w-1/3 mb-10 md:mb-0">
         <h2 className="text-4xl md:text-5xl font-semibold mb-6">
           <span className="text-[#B7A6F7]">Res</span>ources
         </h2>
         <img
-          src={bgImg}
+          src={bgImg8}
           alt="3D abstract"
           className="w-60 md:w-72 object-contain"
         />
@@ -610,22 +774,23 @@ function ResourcesSection() {
             </p>
             <button className="flex items-center text-sm font-medium text-white group">
               Learn more
-              <span className="ml-2 w-6 h-6 flex items-center justify-center border border-[#FF3D3D] rounded-full group-hover:bg-[#FF3D3D]/20 transition-colors">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="white"
-                  className="w-3 h-3"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
+               <span
+    className="relative flex items-center justify-center w-10 h-10 "
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
             </button>
           </div>
         </div>
@@ -656,22 +821,23 @@ function ResourcesSection() {
             </p>
             <button className="flex items-center text-sm font-medium text-white group">
               Learn more
-              <span className="ml-2 w-6 h-6 flex items-center justify-center border border-[#FF3D3D] rounded-full group-hover:bg-[#FF3D3D]/20 transition-colors">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="white"
-                  className="w-3 h-3"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
+               <span
+    className="relative flex items-center justify-center w-10 h-10"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
             </button>
           </div>
         </div>
