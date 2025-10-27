@@ -1,4 +1,22 @@
-import bgImg from "../assets/1_1.png";
+import bgImg from "../assets/2-1.png";
+import bgImg1 from "../assets/2-2.png";
+import bgImg2 from "../assets/2-3.png";
+import bgImg3 from "../assets/2-4.png";
+import bgImg4 from "../assets/2-5.png";
+import bgImg5 from "../assets/2-6.png";
+import bgImg6 from "../assets/2-7.png";
+import bgImg7 from "../assets/2-8.png";
+import bgImg8 from "../assets/2-9.png";
+import bgImg9 from "../assets/2-10.jpg";
+import bgImg10 from "../assets/2-11.jpg";
+import bgImg11 from "../assets/2-12.jpg";
+import bgImg12 from "../assets/2-13.png";
+import aws from "../assets/aws.png";
+import opentext from "../assets/opentext.png";
+import sap from "../assets/sap.png";
+import databricks from "../assets/databrick.png";
+import cloudera from "../assets/cloudera.png";
+import dynatrace from "../assets/dynatrace.png";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 
@@ -14,7 +32,20 @@ const ApplicationDevelopment = () => {
       {/* Content */}
       <div className="relative z-10 text-white max-w-xl px-8 md:px-16">
         <h2 className="text-4xl md:text-5xl font-semibold">
-          <span className="text-[#6A74FF]">Application</span>{' '}
+          <h1
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "56px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+>
+  Application
+</h1>
           <span className="font-bold">Development</span>
         </h2>
 
@@ -53,11 +84,32 @@ const DigitalTransformation = () => {
             </p>
           </div>
 
-          <button className="group inline-flex items-center text-sm md:text-base font-medium text-white relative">
-            <span>Get Started</span>
-            <span className="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-            <span className="absolute -inset-1 rounded-full border border-red-500 opacity-50 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"></span>
-          </button>
+         <button
+  className="flex items-center gap-3 text-white text-lg font-medium relative group"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    backgroundColor: "transparent",
+  }}
+>
+  <span>Get Started</span>
+  <span
+    className="relative flex items-center justify-center w-10 h-10 right-5"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
+</button>
         </div>
 
         {/* Right Image */}
@@ -76,13 +128,13 @@ const DigitalTransformation = () => {
 // SmartSolutions.jsx
 const SmartSolutions = () => {
   const sectors = [
-    { title: 'Healthcare', img: bgImg },
-    { title: 'Enterprise', img: bgImg },
-    { title: 'Bank and Financial', img: bgImg },
-    { title: 'EdTech', img: bgImg },
-    { title: 'Manufacturing', img: bgImg },
-    { title: 'E-commerce', img: bgImg },
-    { title: 'Government', img: bgImg },
+    { title: 'Healthcare', img: bgImg2 },
+    { title: 'Enterprise', img: bgImg3 },
+    { title: 'Bank and Financial', img: bgImg4 },
+    { title: 'EdTech', img: bgImg5 },
+    { title: 'Manufacturing', img: bgImg6 },
+    { title: 'E-commerce', img: bgImg7 },
+    { title: 'Government', img: bgImg8 },
   ];
 
   return (
@@ -121,9 +173,23 @@ const SmartSolutions = () => {
                 <h3 className="text-white text-sm md:text-base font-semibold">
                   {item.title}
                 </h3>
-                <button className="border border-red-500 rounded-full p-1.5 text-xs text-white group-hover:bg-red-500 transition-colors duration-300">
-                  →
-                </button>
+                <span
+    className="relative flex items-center justify-center w-10 h-10 right-5"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
               </div>
             </div>
           </div>
@@ -176,13 +242,19 @@ const AgileJourney = () => {
 
       <div className="relative max-w-7xl mx-auto text-center">
         {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Our <span className="text-indigo-400">Agile</span> Development{" "}
-          <span className="text-indigo-400">Journey</span>
-        </h2>
-        <p className="text-gray-300 text-lg mb-12">
-          A Proven, Collaborative Process From Idea to Launch and Beyond
-        </p>
+        <div className="relative max-w-7xl mx-auto text-left">
+  {/* Header */}
+  <div>
+    <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+      Our <span className="text-indigo-400">Agile</span> Development{" "}
+      <span className="text-indigo-400">Journey</span>
+    </h2>
+    <p className="text-gray-300 text-lg mb-12">
+      A Proven, Collaborative Process From Idea to Launch and Beyond
+    </p>
+  </div>
+</div>
+       
 
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -204,79 +276,81 @@ const AgileJourney = () => {
   );
 };
 
-// ToolsSection.jsx
-const ToolsSection = () => {
-  const tools = [
-    {
-      name: "Databricks",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Databricks_Logo.png",
-    },
-    {
-      name: "Cloudera",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Cloudera_logo.svg",
-    },
-    {
-      name: "SAP",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg",
-    },
-    {
-      name: "Opentext",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/b/b4/OpenText_logo.svg",
-    },
-    {
-      name: "Dynatrace",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/7/72/Dynatrace_logo.svg",
-    },
-    {
-      name: "AWS",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-    },
-  ];
+const tools = [
+  { name: "Databricks", logo: `${databricks}` },
+  { name: "Cloudera", logo: `${cloudera}` },
+  { name: "SAP", logo: `${sap}` },
+  { name: "Opentext", logo: `${opentext}` },
+  { name: "Dynatrace", logo: `${dynatrace}` },
+  { name: "Aws", logo: `${aws}` },
+];
 
+ function ToolsSection() {
   return (
-    <section
-      className="relative py-20 px-6 bg-cover bg-center text-white"
-      style={{ backgroundImage: `url(${bgImg})` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-85"></div>
-
-      <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-        {/* Left Content */}
-        <div className="flex-1 text-center lg:text-left">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-            Built With the{" "}
-            <span className="text-indigo-400">Right Tools</span> for the Job
+    <section className="bg-black text-white py-24 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* Left Text Section */}
+        <div>
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+            Built <span className="text-indigo-400">With the Right</span> <br />
+            <span className="text-indigo-400">Tools for</span> the Job
           </h2>
-          <p className="text-gray-300 text-lg mb-8">
-            We use cutting-edge frameworks and platforms to ensure top
-            performance.
+
+          <p className="text-gray-400 mb-8 text-lg">
+            We use cutting-edge frameworks and platforms to ensure top performance.
           </p>
 
-          <button className="flex items-center justify-center gap-2 bg-transparent border border-indigo-400 hover:bg-indigo-500 hover:border-indigo-500 text-white py-2 px-6 rounded-full text-sm font-medium transition-all duration-300">
-            Get Started <span className="text-lg">→</span>
-          </button>
+          <button
+  className="flex items-center gap-3 text-white text-lg font-medium relative group"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    backgroundColor: "transparent",
+  }}
+>
+  <span>Get Started</span>
+  <span
+    className="relative flex items-center justify-center w-10 h-10 right-5"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
+</button>
         </div>
 
-        {/* Right Grid */}
-        <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-6 justify-items-center">
-          {tools.map((tool, i) => (
+        {/* Right Tools Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          {tools.map((tool, index) => (
             <div
-              key={i}
-              className="w-40 h-40 bg-gray-900/60 border border-gray-700 rounded-xl flex flex-col items-center justify-center hover:bg-gray-800/70 transition-all duration-300"
+              key={index}
+              className="bg-[#1e1e1e] hover:bg-[#2a2a2a] transition rounded-lg p-6 flex flex-col items-center justify-center text-center"
             >
-              <img
-                src={tool.logo}
-                alt={tool.name}
-                className="h-10 object-contain mb-3"
-              />
-              <p className="text-gray-200 text-sm font-medium">{tool.name}</p>
+              {/* Placeholder for logo — replace with actual <img> */}
+              <div className="w-14 h-14 mb-3 flex items-center justify-center">
+                <img
+                  src={tool.logo}
+                  alt={tool.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              <p className="font-medium text-gray-200">{tool.name}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
 // CaseStudiesSection.jsx
 const CaseStudiesSection = () => {
@@ -284,17 +358,17 @@ const CaseStudiesSection = () => {
     {
       title: "SmartPay",
       desc: "We built a secure payment app enabling faster, safer, and more reliable transactions for global users.",
-      img: "https://images.unsplash.com/photo-1556742043-3c52d6e88c62?auto=format&fit=crop&w=800&q=80",
+      img: `${bgImg10}`,
     },
     {
       title: "EduConnect",
       desc: "Designed a learning platform that delivers interactive courses, real-time assessments, and smooth student-teacher engagement.",
-      img: "https://images.unsplash.com/photo-1584697964199-42d6b1a1e3f3?auto=format&fit=crop&w=800&q=80",
+      img: `${bgImg11}`,
     },
     {
       title: "HealthTrack",
       desc: "Created a healthcare app that helps users monitor health stats, book appointments, and access reports seamlessly.",
-      img: "https://images.unsplash.com/photo-1601597111074-66c9b2bfc3d3?auto=format&fit=crop&w=800&q=80",
+      img: `${bgImg12}`,
     },
   ];
 
@@ -306,14 +380,16 @@ const CaseStudiesSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-85"></div>
 
       <div className="relative max-w-7xl mx-auto text-center">
-        {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-          See What <span className="text-indigo-400">We’ve</span> Achieved{" "}
-          <span className="text-indigo-400">Together</span>
-        </h2>
-        <p className="text-gray-300 text-lg mb-12 max-w-2xl mx-auto">
-          Discover how our solutions solved real problems and delivered measurable business outcomes.
-        </p>
+       <div className="text-left">
+  {/* Header */}
+  <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+    See What <span className="text-indigo-400">We’ve</span> Achieved{" "}
+    <span className="text-indigo-400">Together</span>
+  </h2>
+  <p className="text-gray-300 text-lg mb-12 max-w-2xl">
+    Discover how our solutions solved real problems and delivered measurable business outcomes.
+  </p>
+</div>
 
         {/* Case Study Cards */}
         <div className="grid md:grid-cols-3 gap-8">
@@ -336,13 +412,37 @@ const CaseStudiesSection = () => {
         </div>
 
         {/* Navigation Arrows */}
-        <div className="flex justify-center gap-6 mt-12">
-          <button className="w-10 h-10 rounded-full border border-indigo-400 flex items-center justify-center hover:bg-indigo-500 hover:border-indigo-500 transition-all duration-300">
-            <span className="text-lg">⟵</span>
-          </button>
-          <button className="w-10 h-10 rounded-full border border-indigo-400 flex items-center justify-center hover:bg-indigo-500 hover:border-indigo-500 transition-all duration-300">
-            <span className="text-lg">⟶</span>
-          </button>
+         <div className="flex justify-end space-x-4 mt-10">
+          <button
+    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  {/* Right Arrow */}
+  <button
+    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
         </div>
       </div>
     </section>
@@ -355,19 +455,19 @@ const RelatedInsights = () => {
       title: "AGILE METHODS",
       description:
         "Discover how agile practices speed up development and reduce risks.",
-      img: bgImg, // use your imported image
+      img: bgImg9, // use your imported image
     },
     {
       title: "CLOUD-NATIVE APPS",
       description:
         "Learn why modern apps thrive on cloud-native architecture.",
-      img: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
+      img: bgImg10, // use your imported image
     },
     {
       title: "USER-CENTRIC DESIGN",
       description:
         "See how focusing on users drives better adoption and success.",
-      img: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80",
+      img: bgImg11, // use your imported image
     },
   ];
 
@@ -397,22 +497,23 @@ const RelatedInsights = () => {
               </div>
               <button className="flex items-center text-white font-semibold group">
                 <span className="text-sm mr-2">Learn more</span>
-                <span className="w-8 h-8 flex items-center justify-center border border-gray-400 rounded-full group-hover:border-red-500 transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-4 h-4 group-hover:text-red-500 transition-colors"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
-                </span>
+                 <span
+    className="relative flex items-center justify-center w-10 h-10 right-1"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
               </button>
             </div>
           </div>
@@ -420,7 +521,7 @@ const RelatedInsights = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="flex justify-end gap-4 mt-10">
+     <div className="flex justify-end gap-4 mt-10">
         <button className="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center hover:border-red-500 transition-colors">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -513,7 +614,7 @@ const Resources = () => {
           <span className="text-white">Resources</span>
         </h2>
         <img
-          src={bgImg}
+          src={bgImg12}
           alt="Resources graphic"
           className="w-64 h-64 object-contain drop-shadow-2xl"
         />
@@ -532,22 +633,23 @@ const Resources = () => {
 
             <button className="flex items-center text-white font-medium group">
               <span className="text-sm mr-2">Learn more</span>
-              <span className="w-8 h-8 flex items-center justify-center border border-gray-400 rounded-full group-hover:border-red-500 transition-colors">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-4 h-4 group-hover:text-red-500 transition-colors"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </span>
+               <span
+    className="relative flex items-center justify-center w-10 h-10 right-1"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
             </button>
           </div>
         ))}
@@ -589,9 +691,23 @@ const JoinUs = () => {
         <div className="pt-4">
           <button className="flex items-center gap-2 text-white hover:text-red-400 transition">
             <span>Connect HPIT</span>
-            <span className="w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500">
-              →
-            </span>
+             <span
+    className="relative flex items-center justify-center w-10 h-10 right-3"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
           </button>
         </div>
       </div>
@@ -599,7 +715,7 @@ const JoinUs = () => {
       {/* Right Image */}
       <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
         <img
-          src={bgImg}
+          src={bgImg8}
           alt="Team working"
           className="rounded-md shadow-lg w-full max-w-md md:max-w-lg object-cover"
         />

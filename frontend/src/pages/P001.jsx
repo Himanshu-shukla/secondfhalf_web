@@ -344,8 +344,6 @@ function MigrationServices() {
   );
 }
 
-import React from "react";
-
 const tools = [
   { name: "Databricks", logo: `${databricks}` },
   { name: "Cloudera", logo: `${cloudera}` },
