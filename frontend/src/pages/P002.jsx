@@ -13,7 +13,7 @@ import bgImg11 from "../assets/2-12.jpg";
 import bgImg12 from "../assets/2-13.png";
 import aws from "../assets/aws.png";
 import opentext from "../assets/opentext.png";
-import sap from "../assets/sap.png";
+import sap from "../assets/SAP.png";
 import databricks from "../assets/databrick.png";
 import cloudera from "../assets/cloudera.png";
 import dynatrace from "../assets/dynatrace.png";

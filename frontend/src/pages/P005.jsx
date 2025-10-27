@@ -9,7 +9,7 @@ import bgImg7 from "../assets/5-8.jpg";
 import bgImg8 from "../assets/5-9.png";
 import aws from "../assets/aws.png";
 import opentext from "../assets/opentext.png";
-import sap from "../assets/sap.png";
+import sap from "../assets/SAP.png";
 import databricks from "../assets/databrick.png";
 import cloudera from "../assets/cloudera.png";
 import dynatrace from "../assets/dynatrace.png";
