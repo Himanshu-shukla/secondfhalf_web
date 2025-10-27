@@ -1,4 +1,18 @@
 import bgImg from "../assets/1_1.png";
+import bgImg1 from "../assets/1-2.jpg";
+import bgImg2 from "../assets/1-3.png";
+import bgImg3 from "../assets/1-4.png";
+import bgImg4 from "../assets/1-5.png";
+import bgImg5 from "../assets/1-6.png";
+import bgImg6 from "../assets/1-7.png";
+import bgImg7 from "../assets/1-9.png";
+import bgImg8 from "../assets/1-10.png";
+import aws from "../assets/aws.png";
+import opentext from "../assets/opentext.png";
+import sap from "../assets/sap.png";
+import databricks from "../assets/databrick.png";
+import cloudera from "../assets/cloudera.png";
+import dynatrace from "../assets/dynatrace.png";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const WhyMigrationMatters = () => {
@@ -29,29 +43,31 @@ const WhyMigrationMatters = () => {
 
         {/* Arrow Line (optional decorative element) */}
         <div className="mt-10">
-          <svg
-            width="120"
-            height="60"
-            viewBox="0 0 120 60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="opacity-70"
-          >
-            <path
-              d="M2 2C40 80 80 10 118 58"
-              stroke="#ffffff50"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-            <path
-              d="M110 56L118 58L116 50"
-              stroke="#ffffff50"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
+  <svg
+    width="120"
+    height="120"
+    viewBox="0 0 120 120"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="opacity-70"
+  >
+    {/* Curved loop path */}
+    <path d="M 30 20 Q 60 40, 80 70 Q 100 100, 85 120 Q 70 140, 50 130 Q 35 120, 40 100 Q 45 80, 65 85 Q 90 90, 110 110 Q 130 130, 160 150" 
+        fill="none" 
+        stroke="gray" 
+        stroke-width="2" 
+        stroke-linecap="round"/>
+    {/* Arrowhead */}
+    <path
+      d="M100 95 L110 100 L103 108"
+      stroke="#9CA3AF"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+    />
+  </svg>
+</div>
       </div>
 
       {/* Right Side - Bullet Points */}
@@ -59,7 +75,7 @@ const WhyMigrationMatters = () => {
         {benefits.map((item, index) => (
           <div key={index} className="flex items-start gap-3">
             <div className="flex-shrink-0">
-              <CheckCircleIcon className="w-6 h-6 text-white bg-gradient-to-r from-purple-500 to-blue-500 rounded-full" />
+              <CheckCircleIcon className="w-8 h-8 text-white " />
             </div>
             <p className="text-gray-300">{item}</p>
           </div>
@@ -75,17 +91,32 @@ function HeroMigration() {
       className="relative min-h-[70vh] bg-cover bg-center bg-no-repeat flex items-center text-white"
       style={{
         backgroundImage: `url(${bgImg})`,
+        zIndex: 0
       }}
     >
-      <div className="absolute inset-0 bg-black/70" />
-      <div className="relative z-10 max-w-3xl mx-auto px-6">
-        <h1
-          className="text-5xl font-light mb-2"
-          style={{ WebkitTextStroke: "1px white", color: "transparent" }}
-        >
-          Application
-        </h1>
-        <h2 className="text-5xl font-bold text-white">Migration</h2>
+      <div className="relative z-10 max-w-3xl ml-10 px-10">
+       <h1
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "56px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+>
+  Application
+</h1>
+        <h2 className="text-5xl font-bold text-white"
+        style={{
+          fontWeight: 600,
+    fontSize: "56px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+        }}
+        >Migration</h2>
         <p className="mt-6 text-gray-300 leading-relaxed">
           Seamlessly transition from legacy systems to modern, secure, and scalable environments
           empowering your organization to evolve without losing momentum.
@@ -113,14 +144,42 @@ const ModernizeSection = () => {
           and long-term growth.
         </p>
 
-        <button className="group flex items-center gap-2 text-sm font-medium text-white border border-red-500 rounded-full px-5 py-2 hover:bg-red-500 transition-all">
-          Get Started
-          <span className="group-hover:translate-x-1 transition-transform">→</span>
-        </button>
+        <button
+  className="flex items-center gap-3 text-white text-lg font-medium relative group"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    backgroundColor: "transparent",
+  }}
+>
+  <span>Get Started</span>
+  <span
+    className="relative flex items-center justify-center w-10 h-10 right-5"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
+</button>
+
       </div>
 
       {/* Right Side (Placeholder for image or video) */}
-      <div className="mt-12 lg:mt-0 lg:ml-16 w-full max-w-md h-64 bg-gray-900/30 border border-gray-800 rounded-lg"></div>
+      <div className="mt-12 lg:mt-0 lg:ml-16 w-full max-w-md h-64 bg-gray-900/30 border border-gray-800 rounded-lg"
+      style={{ backgroundImage: `url(${bgImg1})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }}
+      ></div>
     </section>
   );
 };
@@ -172,7 +231,17 @@ function MigrationApproach() {
         <div className="space-y-16 md:pr-12">
           {steps.slice(0, 2).map((step) => (
             <div key={step.number}>
-              <h3 className="text-4xl font-bold text-red-600 mb-4">{step.number}</h3>
+              <h3 className="text-4xl font-bold text-red-600 mb-4"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    WebkitTextStroke: "1px #FF0000",
+    WebkitTextFillColor: "transparent",
+              }}
+              >{step.number}</h3>
               <h4 className="text-xl font-semibold mb-2">{step.title}</h4>
               <p className="text-gray-400 leading-relaxed">{step.description}</p>
             </div>
@@ -183,7 +252,17 @@ function MigrationApproach() {
         <div className="space-y-16 md:pl-12 pt-16 md:pt-0">
           {steps.slice(2).map((step) => (
             <div key={step.number}>
-              <h3 className="text-4xl font-bold text-red-600 mb-4">{step.number}</h3>
+              <h3 className="text-4xl font-bold text-red-600 mb-4"
+               style={{
+                fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    WebkitTextStroke: "1px #FF0000",
+    WebkitTextFillColor: "transparent",
+              }}
+              >{step.number}</h3>
               <h4 className="text-xl font-semibold mb-2">{step.title}</h4>
               <p className="text-gray-400 leading-relaxed">{step.description}</p>
             </div>
@@ -241,26 +320,26 @@ function MigrationServices() {
 
       {/* Services Grid */}
       <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className={`rounded-md p-6 transition-all duration-300 shadow-sm ${
-              service.highlight
-                ? "bg-gradient-to-br from-indigo-500 to-purple-600"
-                : "bg-[#1e1e1e] hover:bg-[#2a2a2a]"
-            }`}
-          >
-            <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-            <p
-              className={`text-gray-300 text-sm leading-relaxed ${
-                service.highlight ? "text-white/90" : ""
-              }`}
-            >
-              {service.description}
-            </p>
-          </div>
-        ))}
-      </div>
+  {services.map((service, index) => (
+    <div
+      key={index}
+      className={`rounded-md p-6 transition-all duration-300 shadow-sm border-b-2 border-white ${
+        service.highlight
+          ? "bg-gradient-to-br from-indigo-500 to-purple-600"
+          : "bg-[#1e1e1e] hover:bg-[#2a2a2a]"
+      }`}
+    >
+      <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+      <p
+        className={`text-gray-300 text-sm leading-relaxed ${
+          service.highlight ? "text-white/90" : ""
+        }`}
+      >
+        {service.description}
+      </p>
+    </div>
+  ))}
+</div>
     </section>
   );
 }
@@ -268,12 +347,12 @@ function MigrationServices() {
 import React from "react";
 
 const tools = [
-  { name: "Databricks", logo: "/logos/databricks.png" },
-  { name: "Cloudera", logo: "/logos/cloudera.png" },
-  { name: "SAP", logo: "/logos/sap.png" },
-  { name: "Opentext", logo: "/logos/opentext.png" },
-  { name: "Dynatrace", logo: "/logos/dynatrace.png" },
-  { name: "Aws", logo: "/logos/aws.png" },
+  { name: "Databricks", logo: `${databricks}` },
+  { name: "Cloudera", logo: `${cloudera}` },
+  { name: "SAP", logo: `${sap}` },
+  { name: "Opentext", logo: `${opentext}` },
+  { name: "Dynatrace", logo: `${dynatrace}` },
+  { name: "Aws", logo: `${aws}` },
 ];
 
  function ToolsSection() {
@@ -291,15 +370,32 @@ const tools = [
             We use cutting-edge frameworks and platforms to ensure top performance.
           </p>
 
-          <a
-            href="#"
-            className="inline-flex items-center text-white font-medium hover:text-indigo-400 transition group"
-          >
-            Get Started
-            <span className="ml-2 transform group-hover:translate-x-1 transition">
-              →
-            </span>
-          </a>
+          <button
+  className="flex items-center gap-3 text-white text-lg font-medium relative group"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    backgroundColor: "transparent",
+  }}
+>
+  <span>Get Started</span>
+  <span
+    className="relative flex items-center justify-center w-10 h-10 right-5"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
+</button>
         </div>
 
         {/* Right Tools Grid */}
@@ -342,7 +438,7 @@ const WhyChoose = () => {
             and mission-first focus
           </p>
           <img 
-            src={bgImg} 
+            src={bgImg3} 
             alt="Team collaboration" 
             className="rounded-lg shadow-lg w-full"
           />
@@ -359,7 +455,17 @@ const WhyChoose = () => {
             {/* Mission-Driven Approach */}
             <div>
               <h3 className="flex items-center text-xl font-semibold mb-2">
-                <span className="text-red-500 text-2xl mr-2">•</span> Mission-Driven Approach
+                <span className="text-red-500 text-2xl mr-2"
+                style={{
+                fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    WebkitTextStroke: "1px #FF0000",
+    WebkitTextFillColor: "transparent",
+              }}
+                >•</span> Mission-Driven Approach
               </h3>
               <p className="text-gray-400">
                 We rehost, re-platform, or refactor applications as needed ensuring compatibility, 
@@ -370,7 +476,17 @@ const WhyChoose = () => {
             {/* Proven Expertise */}
             <div>
               <h3 className="flex items-center text-xl font-semibold mb-2">
-                <span className="text-red-500 text-2xl mr-2">•</span> Proven Expertise
+                <span className="text-red-500 text-2xl mr-2"
+                style={{
+                fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    WebkitTextStroke: "1px #FF0000",
+    WebkitTextFillColor: "transparent",
+              }}
+                >•</span> Proven Expertise
               </h3>
               <p className="text-gray-400">
                 Our team brings years of experience across government and private sectors, 
@@ -381,7 +497,17 @@ const WhyChoose = () => {
             {/* Secure & Compliant Solutions */}
             <div>
               <h3 className="flex items-center text-xl font-semibold mb-2">
-                <span className="text-red-500 text-2xl mr-2">•</span> Secure & Compliant Solutions
+                <span className="text-red-500 text-2xl mr-2"
+                style={{
+                fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    WebkitTextStroke: "1px #FF0000",
+    WebkitTextFillColor: "transparent",
+              }}
+                >•</span> Secure & Compliant Solutions
               </h3>
               <p className="text-gray-400">
                 We prioritize security and compliance at every stage, meeting the highest 
@@ -392,7 +518,17 @@ const WhyChoose = () => {
             {/* End-to-End Support */}
             <div>
               <h3 className="flex items-center text-xl font-semibold mb-2">
-                <span className="text-red-500 text-2xl mr-2">•</span> End-to-End Support
+                <span className="text-red-500 text-2xl mr-2" 
+                style={{
+                fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "45px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    WebkitTextStroke: "1px #FF0000",
+    WebkitTextFillColor: "transparent",
+              }}
+              >•</span> End-to-End Support
               </h3>
               <p className="text-gray-400">
                 From assessment to optimization, we provide full lifecycle support to ensure 
@@ -413,17 +549,17 @@ const RelatedInsights = () => {
     {
       title: 'CLOUD ADOPTION',
       description: 'Discover how businesses move to the cloud with minimal disruption.',
-      image: bgImg,
+      image: bgImg4,
     },
     {
       title: 'LEGACY MODERNIZATION',
       description: 'Transform outdated systems into agile, future-ready applications.',
-      image: bgImg,
+      image: bgImg5,
     },
     {
       title: 'COST EFFICIENCY',
       description: 'Learn strategies to reduce migration costs while boosting performance.',
-      image: bgImg,
+      image: bgImg6,
     },
   ];
 
@@ -454,9 +590,23 @@ const RelatedInsights = () => {
                 <p className="text-gray-400 mb-6">{card.description}</p>
                 <button className="flex items-center text-white font-semibold hover:text-red-500 transition">
                   Learn more
-                  <span className="ml-2 w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500 text-sm">
-                    →
-                  </span>
+                  <span
+    className="relative flex items-center justify-center w-10 h-10 right-2"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
                 </button>
               </div>
             </div>
@@ -465,12 +615,36 @@ const RelatedInsights = () => {
 
         {/* Navigation Arrows */}
         <div className="flex justify-end space-x-4 mt-10">
-          <button className="w-10 h-10 flex items-center justify-center border border-gray-500 text-gray-300 rounded-full hover:border-red-500 hover:text-red-500 transition">
-            <span className="text-xl">←</span>
-          </button>
-          <button className="w-10 h-10 flex items-center justify-center border border-gray-500 text-gray-300 rounded-full hover:border-red-500 hover:text-red-500 transition">
-            <span className="text-xl">→</span>
-          </button>
+          <button
+    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  {/* Right Arrow */}
+  <button
+    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
         </div>
       </div>
     </section>
@@ -504,7 +678,7 @@ const Resources = () => {
             Resources
           </h2>
           <img
-            src={bgImg}
+            src={bgImg7}
             alt="Resource graphic"
             className="w-80 h-80 object-contain"
           />
@@ -524,9 +698,23 @@ const Resources = () => {
               <p className="text-gray-400 mb-6">{card.description}</p>
               <button className="flex items-center text-white font-semibold hover:text-red-500 transition">
                 Learn more
-                <span className="ml-2 w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500 text-sm">
-                  →
-                </span>
+                <span
+    className="relative flex items-center justify-center w-10 h-10 right-1"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
               </button>
             </div>
           ))}
@@ -570,9 +758,23 @@ const JoinUs = () => {
         <div className="pt-4">
           <button className="flex items-center gap-2 text-white hover:text-red-400 transition">
             <span>Connect HPIT</span>
-            <span className="w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500">
-              →
-            </span>
+             <span
+    className="relative flex items-center justify-center w-10 h-10 right-3"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
           </button>
         </div>
       </div>
@@ -580,7 +782,7 @@ const JoinUs = () => {
       {/* Right Image */}
       <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
         <img
-          src={bgImg}
+          src={bgImg8}
           alt="Team working"
           className="rounded-md shadow-lg w-full max-w-md md:max-w-lg object-cover"
         />
