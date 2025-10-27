@@ -6,6 +6,8 @@ import bgImg4 from "../assets/4-5.jpg";
 import bgImg5 from "../assets/4-6.jpg";
 import bgImg6 from "../assets/4-7.jpg";
 import bgImg7 from "../assets/4-8.png";
+import bgImg8 from "../assets/1-10.png";
+
 import aws from "../assets/aws.png";
 import opentext from "../assets/opentext.png";
 import sap from "../assets/sap.png";
