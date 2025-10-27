@@ -1,4 +1,23 @@
-import bgImg from "../assets/1_1.png";
+import bgImg from "../assets/8-1.jpg";
+import bgImg1 from "../assets/8-2.jpg";
+import bgImg2 from "../assets/8-3.jpg";
+import bgImg3 from "../assets/8-4.jpg";
+import bgImg4 from "../assets/8-5.jpg";
+import bgImg5 from "../assets/8-6.jpg";
+import bgImg6 from "../assets/8-7.jpg";
+import bgImg7 from "../assets/8-8.jpg";
+import bgImg8 from "../assets/8-9.png";
+import bgImg12 from "../assets/1-10.png";
+
+import aws from "../assets/aws.png";
+import opentext from "../assets/opentext.png";
+import sap from "../assets/sap.png";
+import databricks from "../assets/databrick.png";
+import cloudera from "../assets/cloudera.png";
+import dynatrace from "../assets/dynatrace.png";
+
+import bgImg13 from "../assets/1-10.png";
+
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 import { FaArrowRight, FaArrowLeft , FaChevronRight } from "react-icons/fa";
@@ -17,10 +36,13 @@ const CloudOperationSection = () => {
   return (
     <section
       className="relative w-full h-[90vh] flex items-center justify-start bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${bgImg})`,
-      }}
+      
     >
+      <img
+    src={bgImg}
+    alt="Background"
+    className="absolute inset-0 w-full h-full object-cover rotate-180"
+  />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
@@ -31,90 +53,92 @@ const CloudOperationSection = () => {
             Cloud
           </span>
           <br />
-          Operation
+          Support
         </h2>
 
         <p className="text-gray-300 text-lg leading-relaxed max-w-md">
-          Ensure performance, security, and resilience in every cloud
-          environment.
+          Reliable support for your cloud. Anytime. Every time.
         </p>
       </div>
     </section>
   );
 };
 
-const ToolsSection = () => {
-  const tools = [
-    {
-      name: "Databricks",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Databricks_Logo.png",
-    },
-    {
-      name: "Cloudera",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Cloudera_logo.svg",
-    },
-    {
-      name: "SAP",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg",
-    },
-    {
-      name: "Opentext",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/b/b4/OpenText_logo.svg",
-    },
-    {
-      name: "Dynatrace",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/7/72/Dynatrace_logo.svg",
-    },
-    {
-      name: "AWS",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-    },
-  ];
+const tools = [
+  { name: "Databricks", logo: `${databricks}` },
+  { name: "Cloudera", logo: `${cloudera}` },
+  { name: "SAP", logo: `${sap}` },
+  { name: "Opentext", logo: `${opentext}` },
+  { name: "Dynatrace", logo: `${dynatrace}` },
+  { name: "Aws", logo: `${aws}` },
+];
 
+ function ToolsSection() {
   return (
-    <section
-      className="relative py-20 px-6 bg-cover bg-center text-white"
-      style={{ backgroundImage: `url(${bgImg})` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-85"></div>
-
-      <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-        {/* Left Content */}
-        <div className="flex-1 text-center lg:text-left">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-            Built With the{" "}
-            <span className="text-indigo-400">Right Tools</span> for the Job
+    <section className="bg-black text-white py-24 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* Left Text Section */}
+        <div>
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+            Built <span className="text-indigo-400">With the Right</span> <br />
+            <span className="text-indigo-400">Tools for</span> the Job
           </h2>
-          <p className="text-gray-300 text-lg mb-8">
-            We use cutting-edge frameworks and platforms to ensure top
-            performance.
+
+          <p className="text-gray-400 mb-8 text-lg">
+            We use cutting-edge frameworks and platforms to ensure top performance.
           </p>
 
-          <button className="flex items-center justify-center gap-2 bg-transparent border border-indigo-400 hover:bg-indigo-500 hover:border-indigo-500 text-white py-2 px-6 rounded-full text-sm font-medium transition-all duration-300">
-            Get Started <span className="text-lg">→</span>
-          </button>
+          <button
+  className="flex items-center gap-3 text-white text-lg font-medium relative group"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    backgroundColor: "transparent",
+  }}
+>
+  <span>Get Started</span>
+  <span
+    className="relative flex items-center justify-center w-10 h-10 right-1"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
+</button>
         </div>
 
-        {/* Right Grid */}
-        <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-6 justify-items-center">
-          {tools.map((tool, i) => (
+        {/* Right Tools Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          {tools.map((tool, index) => (
             <div
-              key={i}
-              className="w-40 h-40 bg-gray-900/60 border border-gray-700 rounded-xl flex flex-col items-center justify-center hover:bg-gray-800/70 transition-all duration-300"
+              key={index}
+              className="bg-[#1e1e1e] hover:bg-[#2a2a2a] transition rounded-lg p-6 flex flex-col items-center justify-center text-center"
             >
-              <img
-                src={tool.logo}
-                alt={tool.name}
-                className="h-10 object-contain mb-3"
-              />
-              <p className="text-gray-200 text-sm font-medium">{tool.name}</p>
+              {/* Placeholder for logo — replace with actual <img> */}
+              <div className="w-14 h-14 mb-3 flex items-center justify-center">
+                <img
+                  src={tool.logo}
+                  alt={tool.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              <p className="font-medium text-gray-200">{tool.name}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
 const CloudConfidenceSection = () => {
   return (
@@ -124,88 +148,310 @@ const CloudConfidenceSection = () => {
         {/* Left Text */}
         <div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-snug">
-            Operate with Confidence <br />
-            in the <span className="text-[#6366F1]">Cloud.</span>
+            Built for Cloud Reliability
           </h2>
 
           <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-8">
-            HPIT delivers end-to-end cloud operations management to optimize
-            performance, ensure compliance, and drive cost efficiency across
-            multi-cloud and hybrid environments.
+            HPIT’s Cloud Support services are designed to ensure stability, security, and performance across your cloud environments. From real-time monitoring to rapid issue resolution, we help you stay ahead of disruptions.
           </p>
 
-          <button className="flex items-center gap-2 text-sm md:text-base font-medium border border-red-500 px-5 py-2 rounded-full hover:bg-red-500 hover:text-white transition-colors duration-300">
-            Get Started <FaArrowRight className="text-sm" />
+          <button className="flex items-center gap-2 text-sm md:text-base font-medium px-5 py-2 rounded-full hover:bg-red-500 hover:text-white transition-colors duration-300">
+            Get Started 
+            <span
+    className="relative flex items-center justify-center w-10 h-10 right-5"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
           </button>
         </div>
 
         {/* Right Image */}
         <div className="flex justify-center md:justify-end">
           <img
-            src={bgImg}
+            src={bgImg1}
             alt="Cloud Operations"
             className="rounded-lg shadow-lg w-full max-w-md object-cover"
           />
         </div>
       </div>
 
-      {/* Divider Section */}
-      <div className="text-center mb-14">
-        <h3 className="text-3xl md:text-4xl font-bold leading-snug">
-          Why Cloud Operations Matter <br />
-          <span className="text-[#6366F1]">More Than Ever</span>
-        </h3>
-      </div>
+    </section>
+  );
+};
 
-      {/* Features Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
-        {/* 1 */}
-        <div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-          <div className="text-3xl text-[#818CF8] mb-4 flex justify-center">
-            <FaCog />
-          </div>
-          <p className="text-gray-300 text-sm leading-relaxed">
-            Increasing complexity of cloud native systems requires continuous
-            monitoring and optimization.
+const CloudSupport = () => {
+  const features = [
+    {
+      title: "Rapid Incident Resolution",
+      desc: "Structured escalation protocols with defined SLAs for critical issue handling.",
+    },
+    {
+      title: "Configuration Assistance",
+      desc: "Support with setup, scaling, networking, and service integrations.",
+    },
+    {
+      title: "Performance & Cost Optimization",
+      desc: "Identify inefficiencies, reduce costs, and maximize cloud ROI.",
+    },
+    {
+      title: "Security & Compliance Guidance",
+      desc: "Maintain regulatory compliance and secure cloud workloads with confidence.",
+    },
+  ];
+
+  return (
+    <section className="bg-black text-white py-20 px-6 md:px-12">
+      <div className="max-w-7xl mx-auto">
+        {/* === Heading Section === */}
+        <div className="mb-12">
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+            Comprehensive{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+              Support
+            </span>{" "}
+            for Every{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+              Cloud Environment
+            </span>
+          </h2>
+          <p className="text-gray-400 max-w-2xl">
+            From configuration to crisis, we cover every aspect of cloud
+            support.
           </p>
         </div>
 
-        {/* 2 */}
-        <div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-          <div className="text-3xl text-[#C026D3] mb-4 flex justify-center">
-            <FaShieldAlt />
+        {/* === Content Section === */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left Image */}
+          <div>
+            <img
+              src={bgImg2}
+              alt="Cloud environment support"
+              className="rounded-lg w-full object-cover shadow-xl"
+            />
           </div>
-          <p className="text-gray-300 text-sm leading-relaxed">
-            Businesses need always-on infrastructure without compromising on
-            security or compliance.
-          </p>
-        </div>
 
-        {/* 3 */}
-        <div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-          <div className="text-3xl text-[#818CF8] mb-4 flex justify-center">
-            <FaDollarSign />
-          </div>
-          <p className="text-gray-300 text-sm leading-relaxed">
-            Cost inefficiencies and resource sprawl are common without proper
-            governance.
-          </p>
-        </div>
+          {/* Right Text + Cards */}
+          <div>
+            <p className="text-gray-300 mb-10 text-base md:text-lg flex items-center gap-3">
+              <span className="w-1 h-6 bg-purple-500 rounded-full"></span>
+              Stay ahead with continuous insights and proactive issue detection
+            </p>
 
-        {/* 4 */}
-        <div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-          <div className="text-3xl text-[#C026D3] mb-4 flex justify-center">
-            <FaChartLine />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-[#111111] border border-gray-800 rounded-xl p-6 transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_20px_rgba(124,58,237,0.15)]"
+                >
+                  <h3 className="text-lg font-semibold mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {feature.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-          <p className="text-gray-300 text-sm leading-relaxed">
-            Cloud operations are foundational for digital agility, uptime, and
-            scalability.
-          </p>
         </div>
       </div>
     </section>
   );
 };
+
+const WhyChooseHPIT = () => {
+  const features = [
+    {
+      title: "Certified Multi Cloud Experts",
+      desc: "In-house teams certified across AWS, Azure, and GCP.",
+    },
+    {
+      title: "SLA-Backed Guarantees",
+      desc: "Response times and uptime metrics you can rely on.",
+    },
+    {
+      title: "Tailored Support Plans",
+      desc: "Flexible engagement models built around your operational needs.",
+    },
+    {
+      title: "Transparent Reporting",
+      desc: "Access real-time dashboards and monthly performance insights.",
+    },
+  ];
+
+  return (
+    <section className="bg-black text-white py-20 px-6 md:px-12">
+      <div className="max-w-7xl mx-auto text-center">
+        {/* === Heading Section === */}
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Why Choose{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+            HPIT
+          </span>{" "}
+          for Cloud Support?
+        </h2>
+        <p className="text-gray-400 text-base md:text-lg mb-16">
+          We’re not just reactive. We’re relentlessly proactive.
+        </p>
+
+        {/* === Layout Grid === */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          {/* Left Column (2 Cards) */}
+          <div className="space-y-8">
+            {features.slice(0, 2).map((feature, index) => (
+              <div
+                key={index}
+                className="bg-[#111111] border border-gray-800 rounded-xl p-6 text-left transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_20px_rgba(124,58,237,0.15)]"
+              >
+                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {feature.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Middle Image */}
+          <div className="flex justify-center">
+            <img
+              src={bgImg3}
+              alt="Team discussion"
+              className="rounded-lg shadow-xl w-full max-w-sm md:max-w-md object-cover"
+              style={{
+                height: "300px",
+              }}
+            />
+          </div>
+
+          {/* Right Column (2 Cards) */}
+          <div className="space-y-8">
+            {features.slice(2, 4).map((feature, index) => (
+              <div
+                key={index}
+                className="bg-[#111111] border border-gray-800 rounded-xl p-6 text-left transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_20px_rgba(124,58,237,0.15)]"
+              >
+                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {feature.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const ProvenImpact = () => {
+  const metrics = [
+    {
+      value: "98%",
+      label: "First-Contact Resolution Rate",
+      bg: "bg-transparent border border-gray-800",
+    },
+    {
+      value: "15-Min",
+      label: "Avg. Critical Response Time",
+      bg: "bg-[#4C1D95]", // purple background
+    },
+    {
+      value: "30–40%",
+      label: "Reduction in Support Overhead",
+      bg: "bg-[#047857]", // green background
+    },
+    {
+      value: "99.99%",
+      label: "Client Uptime Achieved",
+      bg: "bg-transparent border border-gray-800",
+    },
+  ];
+
+  return (
+    <section className="bg-black text-white py-20 px-6 md:px-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* ===== Left Section ===== */}
+        <div>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            Proven Impact with <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+              Measurable Outcomes
+            </span>
+          </h2>
+          <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-10 max-w-lg">
+            Our cloud support isn’t just responsive — it’s results driven. These
+            metrics reflect the efficiency, reliability, and trust our clients
+            experience every day.
+          </p>
+
+          {/* Get Started Button */}
+          <button className="group inline-flex items-center text-white font-medium">
+            Get Started
+            <span className="relative flex items-center justify-center w-10 h-10 ml-2">
+              <span className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent group-hover:rotate-[360deg] transition-transform duration-700 ease-in-out"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="white"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5 12h14m-7-7l7 7-7 7"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        {/* ===== Right Metrics Grid ===== */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {metrics.map((metric, index) => (
+            <div
+              key={index}
+              className={`${metric.bg} rounded-xl p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:scale-105`}
+            >
+              <h3 className="text-3xl md:text-4xl font-extrabold mb-2"
+                style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 500,
+    fontSize: "36px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+              >
+                {metric.value}
+              </h3>
+              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+                {metric.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 
 const CloudOperationsServices = () => {
   return (
@@ -388,23 +634,91 @@ const DeliveredImpactSection = () => {
   );
 };
 
+const IndustriesSupport = () => {
+  const industries = [
+    "FinTech",
+    "Healthcare",
+    "eCommerce",
+    "Manufacturing",
+    "EdTech",
+    "Logistics",
+  ];
+
+  return (
+    <section className="bg-black text-white py-20 px-6 md:px-12">
+      <div className="max-w-7xl mx-auto text-center">
+        {/* === Section Heading === */}
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Industries{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+            We Support
+          </span>
+        </h2>
+        <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+          From regulatory compliance to seasonal traffic spikes we’ve supported
+          it all.
+        </p>
+
+        {/* === Image + Content Card === */}
+        <div className="relative bg-[#111111] rounded-2xl overflow-hidden shadow-lg">
+          {/* Background Image */}
+          <img
+            src={bgImg4}
+            alt="Healthcare Industry"
+            className="w-full h-[400px] object-cover opacity-80"
+          />
+
+          {/* Overlay Text */}
+          <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent p-8 md:p-10 text-left">
+            <h3 className="text-3xl font-bold mb-3">Healthcare</h3>
+            <p className="text-gray-300 max-w-xl mb-6">
+              Support tailored for data-sensitive environments with strict
+              compliance like HIPAA and high availability demands.
+            </p>
+
+            {/* Icon Placeholder */}
+            <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center mb-6">
+              <span className="text-sm font-semibold">J</span>
+            </div>
+
+            {/* === Industry Buttons === */}
+            <div className="flex flex-wrap gap-3 justify-end mr-4">
+  {industries.map((industry, index) => (
+    <button
+      key={index}
+      className={`px-5 py-2 rounded-full border ${
+        industry === "Healthcare"
+          ? "border-purple-500 bg-purple-900/30 text-white"
+          : "border-gray-700 text-gray-300 hover:border-purple-500 hover:text-white"
+      } transition-all duration-300`}
+    >
+      {industry}
+    </button>
+  ))}
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const RelatedInsights = () => {
   const cards = [
     {
-      title: 'CLOUD ADOPTION',
-      description: 'Discover how businesses move to the cloud with minimal disruption.',
-      image: bgImg,
+      title: '24/7 ASSISTANCE',
+      description: 'Ensure uninterrupted operations with round-the-clock cloud support.',
+      image: bgImg5,
     },
     {
-      title: 'LEGACY MODERNIZATION',
-      description: 'Transform outdated systems into agile, future-ready applications.',
-      image: bgImg,
+      title: 'PROACTIVE MONITORING',
+      description: 'Identify and resolve issues before they impact performance.',
+      image: bgImg6,
     },
     {
-      title: 'COST EFFICIENCY',
-      description: 'Learn strategies to reduce migration costs while boosting performance.',
-      image: bgImg,
+      title: 'EXPERT GUIDANCE',
+      description: 'Get tailored solutions to optimize and scale your cloud environment.',
+      image: bgImg7,
     },
   ];
 
@@ -435,9 +749,23 @@ const RelatedInsights = () => {
                 <p className="text-gray-400 mb-6">{card.description}</p>
                 <button className="flex items-center text-white font-semibold hover:text-red-500 transition">
                   Learn more
-                  <span className="ml-2 w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500 text-sm">
-                    →
-                  </span>
+                  <span
+    className="relative flex items-center justify-center w-10 h-10 right-2"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
                 </button>
               </div>
             </div>
@@ -446,12 +774,36 @@ const RelatedInsights = () => {
 
         {/* Navigation Arrows */}
         <div className="flex justify-end space-x-4 mt-10">
-          <button className="w-10 h-10 flex items-center justify-center border border-gray-500 text-gray-300 rounded-full hover:border-red-500 hover:text-red-500 transition">
-            <span className="text-xl">←</span>
-          </button>
-          <button className="w-10 h-10 flex items-center justify-center border border-gray-500 text-gray-300 rounded-full hover:border-red-500 hover:text-red-500 transition">
-            <span className="text-xl">→</span>
-          </button>
+          <button
+    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  {/* Right Arrow */}
+  <button
+    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
         </div>
       </div>
     </section>
@@ -462,15 +814,15 @@ const RelatedInsights = () => {
 const Resources = () => {
   const cards = [
     {
-      title: 'Migration Playbook',
+      title: 'Cloud Support Services',
       description:
-        'Step-by-step guide covering assessment, planning, migration execution, and optimization strategies.',
+        'Leading providers like AWS, Azure, and Google Cloud offer round-the-clock technical support, ensuring business continuity and quick resolution of issues.',
       icon: '📘', // You can replace with a proper icon if needed
     },
     {
-      title: 'Tools & Frameworks',
+      title: 'Knowledge Base',
       description:
-        'Access proven frameworks, checklists, and automation tools that simplify application migration.',
+        'Extensive documentation, tutorials, and user forums provide self-service guidance, helping teams troubleshoot and optimize cloud operations effectively.',
       icon: '🧰',
     },
   ];
@@ -485,7 +837,7 @@ const Resources = () => {
             Resources
           </h2>
           <img
-            src={bgImg}
+            src={bgImg8}
             alt="Resource graphic"
             className="w-80 h-80 object-contain"
           />
@@ -505,9 +857,23 @@ const Resources = () => {
               <p className="text-gray-400 mb-6">{card.description}</p>
               <button className="flex items-center text-white font-semibold hover:text-red-500 transition">
                 Learn more
-                <span className="ml-2 w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500 text-sm">
-                  →
-                </span>
+                <span
+    className="relative flex items-center justify-center w-10 h-10 "
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
               </button>
             </div>
           ))}
@@ -516,6 +882,7 @@ const Resources = () => {
     </section>
   );
 };
+
 
 const JoinUs = () => {
   return (
@@ -550,9 +917,23 @@ const JoinUs = () => {
         <div className="pt-4">
           <button className="flex items-center gap-2 text-white hover:text-red-400 transition">
             <span>Connect HPIT</span>
-            <span className="w-6 h-6 flex items-center justify-center rounded-full border border-red-500 text-red-500">
-              →
-            </span>
+             <span
+    className="relative flex items-center justify-center w-10 h-10 right-1"
+  >
+    <span
+      className="absolute inset-0 rounded-full border-[2px] border-red-600 border-r-transparent rotate-180 group-hover:rotate-[405deg] transition-transform duration-500 ease-in-out"
+    ></span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="white"
+      className="w-5 h-5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </span>
           </button>
         </div>
       </div>
@@ -560,7 +941,7 @@ const JoinUs = () => {
       {/* Right Image */}
       <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
         <img
-          src={bgImg}
+          src={bgImg12}
           alt="Team working"
           className="rounded-md shadow-lg w-full max-w-md md:max-w-lg object-cover"
         />
@@ -579,10 +960,11 @@ export default function P005() {
     <div className="space-y-3">
      <CloudOperationSection/>
      <CloudConfidenceSection/>
-     <CloudOperationsServices/>
+      <CloudSupport/>
+<WhyChooseHPIT/>
+<ProvenImpact />
       <ToolsSection />
-     <DeliveredImpactSection/>
-     
+      <IndustriesSupport />     
       <RelatedInsights/>
       <Resources/>
       <JoinUs/>
