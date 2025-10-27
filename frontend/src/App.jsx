@@ -49,7 +49,7 @@ function Breadcrumb() {
   const { pathname } = useLocation();
   return (
     <div className="text-xs text-white/60 mb-4">
-      {pathname === "/" ? "Home" : `Home ${pathname}`}
+      {/* {pathname === "/" ? "Home" : `Home ${pathname}`} */}
     </div>
   );
 }
