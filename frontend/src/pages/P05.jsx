@@ -1,4 +1,11 @@
-import bgImg from "../assets/1_1.png";
+import bgImg from "../assets/5-1.jpg";
+import bgImg1 from "../assets/5-2.jpg";
+import bgImg2 from "../assets/5-3.jpg";
+import bgImg3 from "../assets/5-4.jpg";
+import bgImg4 from "../assets/5-5.jpg";
+import bgImg5 from "../assets/5-6.jpg";
+import bgImg6 from "../assets/5-7.jpg";
+import bgImg7 from "../assets/5-9.png";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 import { FaArrowRight, FaArrowLeft , FaChevronRight } from "react-icons/fa";
@@ -27,7 +34,18 @@ const CloudOperationSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-3xl px-6 md:px-16 text-white">
         <h2 className="text-4xl md:text-6xl font-bold mb-4">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-300">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-300"
+          style={{
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    fontSize: "56px",
+    lineHeight: "1",
+    letterSpacing: "0.01em",
+    color: "transparent",
+    WebkitTextStroke: "2px #ECEDEE",
+    WebkitTextFillColor: "transparent",
+  }}
+          >
             Cloud
           </span>
           <br />
