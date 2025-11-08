@@ -1,11 +1,11 @@
-import bgImg from "../assets/10-1.jpg";
-import bgImg1 from "../assets/10-2.jpg";
-import bgImg2 from "../assets/10-3.jpg";
-import bgImg3 from "../assets/10-4.jpg";
-import bgImg4 from "../assets/10-5.jpg";
-import bgImg5 from "../assets/10-6.jpg";
-import bgImg6 from "../assets/10-7.jpg";
-import bgImg7 from "../assets/10-8.png";
+import bgImg from "../assets/11-0.jpg";
+import bgImg1 from "../assets/11-1.jpg";
+import bgImg2 from "../assets/11-2.jpg";
+import bgImg3 from "../assets/11-3.jpg";
+import bgImg4 from "../assets/11-4.jpg";
+import bgImg5 from "../assets/11-5.jpg";
+import bgImg6 from "../assets/11-6.jpg";
+import bgImg7 from "../assets/11-7.png";
 import bgImg12 from "../assets/1-10.png";
 import bgImg21 from "../assets/7-3.png";
 import bgImg31 from "../assets/7-4.png";
@@ -48,14 +48,14 @@ const CloudOperationSection = () => {
       <div className="relative z-10 max-w-3xl px-6 md:px-16 text-white  ">
         <h2 className="text-4xl md:text-6xl font-bold mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-300">
-            Cloud
+            Zero
           </span>
           <br />
-          Security
+          Trust
         </h2>
 
         <p className="text-gray-300 text-lg leading-relaxed max-w-md">
-          Comprehensive protection engineered for today’s dynamic and distributed cloud environments.
+          Secure access. Always verified. Never assumed safe.
         </p>
       </div>
     </section>
@@ -153,7 +153,7 @@ const CloudConfidenceSection = () => {
         {/* Left Text */}
         <div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-snug">
-            Smart Security for the Cloud
+            A Modern Framework for Relentless Cyber Defense
           </h2>
 
           <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-8">
@@ -202,18 +202,10 @@ const CloudSecurity = () => {
         {/* ===== HEADER ===== */}
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
-            Comprehensive{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
-              Security
-            </span>{" "}
-            at Every{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
-              Cloud Layer
-            </span>
+            Built to Secure Every Layer, Continuously
           </h2>
           <p className="text-gray-400 text-base md:text-lg mt-4 max-w-2xl">
-            We secure every layer of your cloud—from access to data with smart
-            controls and continuous protection.
+            Zero Trust isn’t a single tool — it’s a security architecture composed of interlocking capabilities. Each one reinforces the other, ensuring your environment remains protected, adaptive, and breach-resilient in real time.
           </p>
         </div>
 
@@ -241,42 +233,118 @@ const CloudSecurity = () => {
               {/* Card 1 */}
               <div className="bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  Identity & Access Management
+                 Identity & Access Intelligence
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Granular role-based access and multi-factor authentication.
+                  Verify every user with adaptive authentication checks.
                 </p>
               </div>
 
               {/* Card 2 */}
               <div className="bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Data Protection</h3>
+                <h3 className="font-semibold text-lg mb-2">Device Trust</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Encryption in transit and at rest with secure key management.
+                  Allow only compliant and secured devices access.
                 </p>
               </div>
 
               {/* Card 3 */}
               <div className="bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  Threat Detection & Response
+                  Micro  Segmentation
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Real-time threat intelligence, monitoring, and automated
-                  remediation.
+                  Isolate systems to prevent lateral threat movement.
                 </p>
               </div>
 
               {/* Card 4 */}
               <div className="bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Network Security</h3>
+                <h3 className="font-semibold text-lg mb-2">Policy-Based Access</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Firewalls, VPC configuration, zero-trust access, and
-                  segmentation.
+                  Grant access based on context and behavior.
+                </p>
+              </div>
+              <div className="bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-6">
+                <h3 className="font-semibold text-lg mb-2">Continuous Monitoring</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Detect and respond to threats in real-time.
+                </p>
+              </div>
+              <div className="bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-6">
+                <h3 className="font-semibold text-lg mb-2">Visibility & Analytics</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Gain deep insights from user and system activity.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const BenefitsSection = () => {
+  return (
+    <section className="bg-black text-white py-20 px-6 md:px-12">
+      <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-snug"
+        style={{ width: "50%"}}
+      >
+            <span className="text-white bg-clip-text bg-gradient-to-r">
+              Benefits That Matter
+            </span>{" "}
+
+          </h2>
+          <span className="mb-2">Enhanced security, seamless user experience, continuous threat detection, adaptive access control, and scalable solutions that grow with your business needs.</span>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 m-2 items-center">
+        {/* === Left Section: Image === */}
+        <div className="relative flex justify-center">
+          <img
+            src={bgImg2}
+            alt="Team Collaboration"
+            className="rounded-lg shadow-2xl w-full max-w-md md:max-w-lg object-cover"
+            style={{
+              height: "400px",
+            }}
+          />
+          {/* Optional subtle grid overlay */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)] rounded-lg"></div>
+        </div>
+
+        {/* === Right Section: Text & Bullets === */}
+        <div className="text-left">
+
+          {/* === Bullet List === */}
+          <ul className="space-y-6">
+  {[
+    {
+      title: "Reduce Attack Surface",
+      desc: "Implicit trust is removed, minimizing entry points.",
+    },
+    {
+      title: "Seamless Integration",
+      desc: "Works with existing IAM, endpoint, and cloud tools.",
+    },
+    {
+      title: "Contain Breaches Faster",
+      desc: "Limits blast radius with granular access control.",
+    },
+    {
+      title: "Compliance-Ready Architecture",
+      desc: "Full audit trails and policy enforcement for HIPAA, GDPR, etc.",
+    },
+  ].map((item, idx) => (
+    <li key={idx} className="flex items-start">
+      {/* Hollow red circle bullet */}
+
+      <div>
+        <h4 className="font-semibold text-lg">{item.title}</h4>
+        <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+      </div>
+    </li>
+  ))}
+</ul>
         </div>
       </div>
     </section>
@@ -919,12 +987,13 @@ export default function P011() {
      <CloudOperationSection/>
      <CloudConfidenceSection/>
      <CloudSecurity/>
-     <SecurityLifecycle/>
+     <BenefitsSection/>
+     <ToolsSection />
+
      <CloudTransformation/>
 
      <Partnerships/>
      <ResultsSection/>
-      <ToolsSection />
      
       <RelatedInsights/>
       <Resources/>
